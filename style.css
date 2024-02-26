@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+    
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+
+
+section{
+	width: 800px;
+	background: #000;
+	margin: 25px auto;
+	display: flex;
+}
+
+.left{
+	background: #191d2b;
+	width: 250px;
+	padding: 0 20px;
+	position: relative;
+}
+
+.right{
+	width: calc(100% - 250px);
+}
+
+.left .profile-img{
+	text-align: center;
+	padding: 20px 0;
+}
+
+.left .profile-img img{
+	width: 200px;
+	border-radius: 15px 5px;
+	border: 1px solid  #3366ff;
+}
+
+.profile-img::before {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    left: 20px;
+    top: 10px;
+    border-top: 10px solid #3366ff;
+    border-left: 10px solid #3366ff;
+}
+
+.profile-img::after {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    right: 20px;
+    bottom: 84%;
+    border-bottom: 10px solid #3366ff;
+    border-right: 10px solid #3366ff;
+}
+
+.pb{
+	padding-bottom: 20px;
+}
+
+.title{
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	padding-bottom: 10px;
+	background: linear-gradient(to left, #3366ff 0%, #ff0066 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	position: relative;
+	text-align: right;
+	margin-bottom: 15px;
+}
+
+.title:before{
+	content: "";
+	position: absolute;
+	top: 35px;
+	right: 0;
+	width: 50px;
+	height: 3px;
+	background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+}
+
+.left .icon{
+	font-size: 20px;
+	color: #9153c9;
+}
+
+.left .text{
+	color: #9153c9;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.contact-info .sub-list{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.contact-info .sub-list .icon{
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+}
+
+.contact-info .sub-list .text{
+	width: calc(100% - 50px);
+	word-break: break-word;
+	color: #fff;
+}
+
+.skills ul,
+.hobbies ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.skills .sub-list,
+.hobbies .sub-list{
+	width: 100px;
+	height: 100px;
+	margin-bottom: 15px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.skills .sub-list{
+	background: #fff;
+}
+
+.skills .sub-list .text,
+.hobbies .sub-list .text{
+	margin-top: 5px;
+}
+
+.hobbies .sub-list{
+	border: 2px solid #fff;
+}
+
+.hobbies .sub-list .icon,
+.hobbies .sub-list .text{
+	color: #fff;
+}
+
+.hobbies .sub-list:hover{
+	background: #fff;
+}
+
+.hobbies .sub-list:hover .icon,
+.hobbies .sub-list:hover .text{
+	color: #9153c9;
+}
+
+.header{
+	background: #252b41;
+	padding: 15px 30px;
+	color: #fff;
+	height: 240px;
+}
+
+.header .user-name{
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.header .user-role{
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.header .user-about{
+	margin-top: 20px;
+	line-height: 26px;
+}
+
+.content-details{
+	padding: 30px;
+	color: #292b2f;
+}
+
+.content-details .education{
+	margin-top: 30px;
+}
+
+.content-details .sub-list{
+	display: flex;
+	margin-bottom: 15px;
+}
+
+.content-details .sub-list .date {
+    width: 125px;
+    color: #9153c9;
+}
+
+.content-details .sub-list .info{
+	width: calc(100%  - 125px);
+	padding-left: 25px;
+	position: relative;
+}
+
+.content-details .sub-list .info_title{
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #9153c9;
+}
+
+.content-details .sub-list .info_com{
+	font-weight: 300;
+	font-size: 14px;
+	margin-top: 3px;
+}
+
+.content-details .sub-list .info_cont{
+	margin-top: 15px;
+}
+
+.content-details .sub-list .info:before{
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background: #9153c9;
+	border-radius: 50%;
+}
+
+.content-details .sub-list .info:after{
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 4px;
+	width: 2px;
+	height: 90%;
+	background: #9153c9;
+}
