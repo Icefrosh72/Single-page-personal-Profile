@@ -131,7 +131,9 @@ section{
 }
 
 .skills ul,
-.hobbies ul{
+.hobbies ul,
+.proj-box ul
+{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -260,4 +262,30 @@ section{
 	width: 2px;
 	height: 90%;
 	background: #9153c9;
+}
+.proj-container{
+	position: relative;
+	margin-top: 15rem;
+}
+.proj-box ul li .sub-list{
+	gap: 1rem;
+	cursor: pointer;
+}
+.proj-box ul li .sub-list .icon {
+	background-color: #f5f5f5;
+	padding: 2.5rem;
+	border-radius: 15px 5px;
+	gap: 2rem;
+} 
+.proj-box ul li .sub-list .icon i{
+	font-size: 28px;
+	background: linear-gradient(to left, #3366ff 0%, #ff0066 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.proj-box ul li .sub-list .text a{
+	text-align: center;
+	justify-content: center;
+	color: #f5f5f5;
 }
